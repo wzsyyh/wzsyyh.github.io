@@ -2,6 +2,9 @@
 title: About Me
 date: 2021-07-20 21:34:47
 ---
+
+[Push_Y's diary](https://diary.wzsyyh.ml)
+
 > 欢迎来到 Push_Y 的博客！
 
 ![](https://www.wzsyyh.ml/image/Push_Y.png)

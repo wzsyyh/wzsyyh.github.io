@@ -238,3 +238,57 @@ void dfs(int u) {
 条件：只有两个点度数为奇数。这两个点也就是欧拉路径的两端。
 
 代码只需在欧拉回路的基础上稍作修改。
+
+## 有向图连通性
+
+### 强连通分量（SCC）
+
+对于有向图中任意两个点 $u,v$，既存在 $u$ 到 $v$ 的路径，又存在 $v$ 到 $u$ 的路径，则该有向图为**强连通图**。
+
+有向图的极大强连通子图被称为**强连通分量**。
+
+**判定法则：**若 $dfn[u] = low[u]$，则从栈中 $u$ 一直到栈顶所有节点构成了强连通分量。
+
+#### 求！
+
+```cpp
+void tarjan(int u) {
+	dfn[u]=low[u]=++dfc;
+	st[++top]=u;
+	for(int i=head[u];i;i=ne[i]) {
+		int v=to[i];
+		if(!dfn[v]) {
+			tarjan(v,u);
+			low[u]=min(low[u],low[v]);
+		}
+		else if(!co[v]) low[u]=min(low[u],dfn[v]);
+	}
+	if(dfn[u]==low[u]) {
+		col++; int x;
+		do {
+			x=st[top--];
+			co[x]=col;
+			scc[col].push_back(x);
+		} while(u!=x);
+	}
+}
+
+signed main {
+	...
+
+	for(int i=1;i<=n;i++) if(!dfn[i]) tarjan(i);
+
+	...
+	return 0;
+}
+```
+
+#### 缩！
+
+```cpp
+	for(int u=1;u<=n;u++) for(int i=head[u];i;i=ne[i]) {
+		int v=to[i];
+		if(co[u]==co[v]) continue;
+		g[co[u]].push_back(co[v]);
+	}
+```

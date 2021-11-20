@@ -49,7 +49,7 @@ void spfa(int s) {
 			int v=to[i];
 			if(dis[v]>dis[u]+we[i]) {
 				dis[v]=dis[u]+we[i];
-				if(!vis[v]) q.push(v);s
+				if(!vis[v]) q.push(v);
 			}
  		}
 	}

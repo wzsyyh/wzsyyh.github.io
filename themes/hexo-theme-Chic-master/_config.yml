@@ -8,6 +8,7 @@ nav:
   Tags: /tag
   Friends: /friends
   About: /about
+  Diary: https://diary.wzsyyh.ml/
 
 # favicon
 favicon: /favicon.ico
@@ -16,7 +17,7 @@ favicon: /favicon.ico
 nickname: Push_Y
 
 ### this variable is MarkDown form.
-description: 竹密无妨溪水过 天高不碍白云飞
+description: 不求任何人满意 只要对得起自己
 avatar: /image/avatar.jpeg
 
 # main menu navigation
@@ -24,7 +25,7 @@ avatar: /image/avatar.jpeg
 ## Complete url after key words.
 ## Unused key can be commented out.
 links:
-  Blog: /archives
+  Blog: https://diary.wzsyyh.ml/
   # Category:
   # Tags: 
   # Link:

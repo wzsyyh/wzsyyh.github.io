@@ -13,23 +13,20 @@ category: 学习笔记
 
 ```cpp
 void dijkstra(int s) {
-	memset(dis,0x3f,sizeof(dis));
-	memset(vis,0,sizeof(vis));
-	dis[s]=0;
-	priority_queue<pi> q;
-	q.push({0,s});
-	while(!q.empty()) {
-		int u=q.front(); q.pop();
-		if(vis[u]) continue;
-		vis[u]=1;
-		for(int i=head[u];i;i=ne[i]) {
-			int v=to[i];
-			if(dis[v]>dis[u]+we[i]) {
-				dis[v]=dis[u]+we[i];
-				q.push({-dis[v],v});
-			}
-		}
-	}
+    memset(dis,0x3f,sizeof(dis));
+    memset(vis,0,sizeof(vis));
+    dis[s]=0;
+    priority_queue<pi> q;
+    q.push({0,s});
+    while(!q.empty()) {
+        int u=q.top().second; q.pop();
+        if(vis[u]) continue;
+        vis[u]=1;
+        for(int i=head[u];i;i=ne[i]) {
+            int v=to[i];
+            if(dis[v]>dis[u]+we[i]) dis[v]=dis[u]+we[i],q.push({-dis[v],v});
+        }
+    }
 }
 ```
 
@@ -37,22 +34,22 @@ void dijkstra(int s) {
 
 ```cpp
 void spfa(int s) {
-	memset(dis,0x3f,sizeof(dis));
-	memset(vis,0,sizeof(vis));
-	dis[s]=0,vis[s]=1;
-	queue<int> q;
-	q.push(s);
-	while(!q.empty()) {
-		int u=q.front(); q.pop();
-		vis[u]=0;
-		for(int i=head[u];i;i=ne[i]) {
-			int v=to[i];
-			if(dis[v]>dis[u]+we[i]) {
-				dis[v]=dis[u]+we[i];
-				if(!vis[v]) q.push(v);
-			}
- 		}
-	}
+    memset(dis,0x3f,sizeof(dis));
+    memset(vis,0,sizeof(vis));
+    dis[s]=0,vis[s]=1;
+    queue<int> q;
+    q.push(s);
+    while(!q.empty()) {
+        int u=q.front(); q.pop();
+        vis[u]=0;
+        for(int i=head[u];i;i=ne[i]) {
+            int v=to[i];
+            if(dis[v]>dis[u]+we[i]) {
+                dis[v]=dis[u]+we[i];
+                if(!vis[v]) q.push(v);
+            }
+        }
+    }
 }
 ```
 

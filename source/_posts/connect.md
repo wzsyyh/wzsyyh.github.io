@@ -30,6 +30,7 @@ bool bdg[N<<1];
 void tarjan(int u,int e) {
 	dfn[u]=low[u]=++dfc;
 	for(int i=head[u];i;i=ne[i]) {
+		v=to[i];
 		if(!dfn[v]) {
 			tarjan(v,i);
 			low[u]=min(low[u],low[v]);

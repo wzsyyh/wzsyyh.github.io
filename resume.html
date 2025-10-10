@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuheng Yang - CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .header h2 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #666;
+            font-weight: normal;
+        }
+        .contact {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .contact a {
+            color: #0066cc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h3 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .item {
+            margin-bottom: 15px;
+        }
+        .item-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .item-date {
+            float: right;
+            color: #666;
+            font-style: italic;
+        }
+        .item-org {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .item-location {
+            color: #666;
+            font-style: italic;
+        }
+        .item-description {
+            margin-top: 5px;
+            color: #555;
+        }
+        .item-description ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        .item-description li {
+            margin-bottom: 3px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        .skill-category h4 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 1.1em;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-list li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .publication {
+            margin-bottom: 15px;
+        }
+        .publication-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .publication-authors {
+            color: #666;
+            margin: 5px 0;
+        }
+        .publication-venue {
+            color: #0066cc;
+            font-style: italic;
+        }
+        .publication-links {
+            margin-top: 5px;
+        }
+        .publication-links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .award {
+            margin-bottom: 10px;
+        }
+        .award-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .award-org {
+            color: #0066cc;
+        }
+        .award-date {
+            float: right;
+            color: #666;
+            font-style: italic;
+        }
+        .clear {
+            clear: both;
+        }
+        @media print {
+            body {
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Yuheng Yang</h1>
+            <h2>Undergraduate Student, Artificial Intelligence</h2>
+        </div>
+        
+        <div class="contact">
+            <a href="mailto:yangyuheng@westlake.edu.cn">yangyuheng@westlake.edu.cn</a>
+            <a href="https://github.com/wzsyyh">github.com/wzsyyh</a>
+            <a href="https://www.linkedin.com/in/宇恒-杨-551830389/">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=BlTtSUkAAAAJ&hl=zh-CN">Google Scholar</a>
+            <a href="https://wzsyyh-github-io.vercel.app/">Personal Blog</a>
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+            <div class="item">
+                <div class="item-title">Bachelor of Science in Artificial Intelligence</div>
+                <div class="item-date">2024 - 2028 (Expected)</div>
+                <div class="item-org">Westlake University</div>
+                <div class="item-location">Hangzhou, China</div>
+                <div class="item-description">
+                    <ul>
+                        <li>Currently in second year of undergraduate studies</li>
+                        <li>Member of AGI Lab, conducting research in AI Agent and 3D/video generation</li>
+                        <li>Focus areas: Artificial Intelligence, Computer Science</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Research Interests</h3>
+            <ul>
+                <li>AI Agent Systems</li>
+                <li>3D/Video Generation</li>
+                <li>Multi-Agent Systems</li>
+                <li>Educational Technology</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Publications</h3>
+            <div class="publication">
+                <div class="publication-title">Auto-Slides: An Interactive Multi-Agent System for Creating and Customizing Research Presentations</div>
+                <div class="publication-authors">Yuheng Yang, Wenjia Jiang, Yang Wang, Yiwei Wang, Chi Zhang</div>
+                <div class="publication-venue">arXiv preprint arXiv:2509.11062, 2025</div>
+                <div class="publication-links">
+                    <a href="https://auto-slides.github.io/">Project Homepage</a>
+                    <a href="https://github.com/Westlake-AGI-Lab/Auto-Slides">Code</a>
+                    <a href="https://arxiv.org/abs/2509.11062">arXiv</a>
+                </div>
+                <div class="item-description">
+                    <ul>
+                        <li>Developed an innovative multi-agent system that transforms academic papers into high-quality, customizable presentation slides</li>
+                        <li>Integrated cognitive science principles and interactive optimization for pedagogically effective presentations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Awards & Achievements</h3>
+            <div class="award">
+                <div class="award-title">First Prize in NOIP 2023 Zhejiang Province</div>
+                <div class="award-date">2023</div>
+                <div class="award-org">National Olympiad in Informatics (NOIP)</div>
+                <div class="clear"></div>
+            </div>
+            <div class="award">
+                <div class="award-title">Silver Medal in ICPC 2024 Kunming Regional Contest</div>
+                <div class="award-date">2024</div>
+                <div class="award-org">International Collegiate Programming Contest (ICPC)</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Technical Skills</h3>
+            <div class="skills">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>PyTorch</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>AI/ML</h4>
+                    <ul class="skill-list">
+                        <li>AI Agent Development</li>
+                        <li>Multi-Agent Systems</li>
+                        <li>3D/Video Generation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools & Languages</h4>
+                    <ul class="skill-list">
+                        <li>Git, GitHub</li>
+                        <li>LaTeX</li>
+                        <li>Chinese (Native)</li>
+                        <li>English (Fluent)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Football</li>
+                <li>Music Creation</li>
+                <li>Magic</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

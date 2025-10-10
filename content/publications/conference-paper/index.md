@@ -1,22 +1,28 @@
 ---
-title: 'An example conference paper'
+title: 'Auto-Slides: An Interactive Multi-Agent System for Creating and Customizing Research Presentations'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
+  - Wenjia Jiang
+  - Yang Wang
+  - Yiwei Wang
+  - Chi Zhang
 
 # Author notes (optional)
 author_notes:
+  - 'First author'
   - 'Equal contribution'
   - 'Equal contribution'
+  - 'Equal contribution'
+  - 'Corresponding author'
 
-date: '2013-07-01T00:00:00Z'
+date: '2025-09-14T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publishDate: '2025-09-14T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -24,16 +30,21 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In *arXiv preprint*
+publication_short: In *arXiv*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: |
+  The rapid progress of large language models (LLMs) has opened new opportunities for education. While learners can interact with academic papers through LLM-powered dialogue, limitations still exist: absence of structured organization and high text reliance can impede systematic understanding and engagement with complex concepts. To address these challenges, we propose Auto-Slides, an LLM-driven system that converts research papers into pedagogically structured, multimodal slides (e.g., diagrams and tables). Drawing on cognitive science, it creates a presentation-oriented narrative and allows iterative refinement via an interactive editor, in order to match learners' knowledge level and goals. Auto-Slides further incorporates verification and knowledge retrieval mechanisms to ensure accuracy and contextual completeness. Through extensive user studies, Auto-Slides enhances learners' comprehension and engagement compared to conventional LLM-based reading. Our contributions lie in designing a multi-agent framework for transforming academic papers into pedagogically optimized slides and introducing interactive customization for personalized learning.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: |
+  We propose Auto-Slides, an LLM-driven multi-agent system that converts research papers into pedagogically structured, multimodal slides with interactive customization capabilities.
 
 tags:
-  - Large Language Models
+  - AI Agent
+  - Multi-Agent Systems
+  - Educational Technology
+  - Human-Computer Interaction
 
 # Display this page in the Featured widget?
 featured: true
@@ -41,27 +52,23 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    doi: 10.5555/123456
+    arxiv: 2509.11062
 
 # Custom links
 links:
   - type: pdf
-    url: ""
+    url: https://arxiv.org/pdf/2509.11062
   - type: code
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: dataset
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: slides
-    url: https://www.slideshare.net/
-  - type: source
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: video
-    url: https://youtube.com
+    url: https://github.com/Westlake-AGI-Lab/Auto-Slides
+  - type: project
+    url: https://auto-slides.github.io/
+  - type: arxiv
+    url: https://arxiv.org/abs/2509.11062
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Auto-Slides: An overview of the multi-agent system for academic presentation generation'
   focal_point: ''
   preview_only: false
 
@@ -70,8 +77,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - example
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -81,10 +87,8 @@ projects:
 slides: ""
 ---
 
-> [!NOTE]
-> Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+## Project Links
 
-> [!NOTE]
-> Create your slides in Markdown - click the _Slides_ button to check out the example.
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+- **Project Homepage**: [auto-slides.github.io](https://auto-slides.github.io/)
+- **arXiv Paper**: [arXiv:2509.11062](https://arxiv.org/abs/2509.11062)
+- **GitHub Code**: [Westlake-AGI-Lab/Auto-Slides](https://github.com/Westlake-AGI-Lab/Auto-Slides)

@@ -1,13 +1,13 @@
 ---
 # Display name
-title: Alex Johnson
+title: Yuheng Yang
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Yuheng
+last_name: Yang
 
 # Pronouns (optional)
 pronouns: he/him
@@ -23,80 +23,45 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Undergraduate Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: AGI Lab, Westlake University
+    url: https://www.westlake.edu.cn/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:yangyuheng@westlake.edu.cn'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
   - icon: brands/github
-    url: https://github.com/alexjohnsonai
+    url: https://github.com/wzsyyh
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
+    url: https://www.linkedin.com/in/%E5%AE%87%E6%81%92-%E6%9D%A8-551830389/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://scholar.google.com/citations?user=BlTtSUkAAAAJ&hl=zh-CN
+  - icon: rss
+    url: https://wzsyyh-github-io.vercel.app/
+    label: Personal Blog
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - AI Agent
+  - 3D Generation
+  - Video Generation
+  - Multi-Agent Systems
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+  - area: Bachelor of Science in Artificial Intelligence
+    institution: Westlake University
+    date_start: 2024-09-01
+    date_end: 2028-06-30
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    date_start: 2013-09-01
-    date_end: 2015-05-31
-    summary: |
-      GPA: 4.0/4.0
+      Currently in my second year of undergraduate studies, focusing on artificial intelligence and computer science. 
+      Member of the AGI Lab, conducting research in AI Agent and 3D/video generation.
 
-      Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    date_start: 2009-09-01
-    date_end: 2013-05-31
-    summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
-
-work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
-    company_logo: ''
-    date_start: 2020-01-01
-    date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    company_logo: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+work: []
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -105,65 +70,62 @@ skills:
     items:
       - name: Python & PyTorch
         description: ''
-        percent: 95
+        percent: 90
         icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
+      - name: AI Agent Development
         description: ''
         percent: 85
-        icon: cloud
+        icon: robot
+      - name: 3D/Video Generation
+        description: ''
+        percent: 80
+        icon: cube
+      - name: Multi-Agent Systems
+        description: ''
+        percent: 85
+        icon: network-wired
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking in the Rockies
+      - name: Football
         description: ''
         percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
-        percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
+        icon: soccer-ball
+      - name: Music Creation
         description: ''
         percent: 70
-        icon: book-open
+        icon: music
+      - name: Magic
+        description: ''
+        percent: 60
+        icon: sparkles
 
 languages:
-  - name: English
+  - name: Chinese (Native)
     percent: 100
-  - name: Spanish
-    percent: 50
+  - name: English
+    percent: 85
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Best Paper Award
-    url: https://neurips.cc/
-    date: '2022-12-01'
-    awarder: NeurIPS
+  - title: First Prize in NOIP 2023 Zhejiang Province
+    url: https://www.noi.cn/
+    date: '2023-12-01'
+    awarder: National Olympiad in Informatics
     icon: hero/trophy
     summary: |
-      Awarded for groundbreaking work on efficient training of large models.
-  - title: AI Innovation Grant
-    url: https://www.nsf.gov/
-    date: '2021-06-15'
-    awarder: National Science Foundation
-    icon: hero/currency-dollar
+      Awarded first prize in the National Olympiad in Informatics (NOIP) at the provincial level in Zhejiang Province.
+  - title: Silver Medal in ICPC 2024 Kunming Regional Contest
+    url: https://icpc.global/
+    date: '2024-10-01'
+    awarder: International Collegiate Programming Contest
+    icon: hero/medal
     summary: |
-      $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
-    url: https://www.stanford.edu/
-    date: '2019-06-30'
-    awarder: Stanford University
-    icon: hero/academic-cap
-    summary: |
-      Recognized for contributions to scaling laws in deep learning.
+      Achieved silver medal in the International Collegiate Programming Contest (ICPC) Kunming Regional Contest.
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+Yuheng Yang is an undergraduate student at Westlake University, currently in his second year of Artificial Intelligence studies. As a member of the AGI Lab, he focuses on research in AI Agent and 3D/video generation. His work includes the development of Auto-Slides, an innovative multi-agent system for automatic academic presentation generation. Yuheng has demonstrated strong programming skills through his achievements in competitive programming, including a first prize in NOIP 2023 Zhejiang Province and a silver medal in ICPC 2024 Kunming Regional Contest. Outside of academics, he enjoys football, music creation, and magic.

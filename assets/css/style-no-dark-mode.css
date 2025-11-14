@@ -155,3 +155,12 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .fakelink { text-decoration: none; cursor: pointer; }
 
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
+
+/* Institution logo styles */
+.experience-item { display: flex; align-items: flex-start; margin-bottom: 20px; }
+
+.institution-logo { width: 60px; height: 60px; object-fit: contain; margin-right: 15px; flex-shrink: 0; }
+
+.experience-content { flex: 1; }
+
+.experience-content p { margin: 0; }

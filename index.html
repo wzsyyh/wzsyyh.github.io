@@ -276,7 +276,7 @@
           icon.classList.replace('fa-moon', 'fa-sun');
           localStorage.setItem('theme', 'dark');
         } else {
-          document.documentElement.removeAttribute('data-theme');
+          document.documentElement.setAttribute('data-theme', 'light');
           icon.classList.replace('fa-sun', 'fa-moon');
           localStorage.setItem('theme', 'light');
         }

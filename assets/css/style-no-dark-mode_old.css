@@ -431,7 +431,7 @@ body.theme-claude .site-footer {
   flex-basis: 100%;
   text-align: center;
   padding: 32px 24px 40px 380px; /* 增加左边距以避开固定的侧边栏 (320px + 60px content padding) */
-  border-top: 1px solid rgba(194, 113, 79, 0.15);
+  border-top: none !important;
   box-sizing: border-box;
 }
 

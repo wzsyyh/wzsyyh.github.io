@@ -17,7 +17,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --claude-bg: #1A1917;
     --claude-text: #D1CEC7;
     --claude-accent: #E28A67;
@@ -43,6 +43,20 @@
   --claude-social-bg: #22211E;
   --claude-social-text: #D1CEC7;
   --claude-footer-border: rgba(226, 138, 103, 0.15);
+}
+
+/* 强制浅色模式变量 */
+[data-theme="light"] {
+  --claude-bg: #FAF9F7;
+  --claude-text: #3D3929;
+  --claude-accent: #C2714F;
+  --claude-secondary: #8C8577;
+  --claude-sidebar-bg: transparent;
+  --claude-card-shadow: rgba(194, 113, 79, 0.15);
+  --claude-border: rgba(194, 113, 79, 0.2);
+  --claude-social-bg: #FFFFFF;
+  --claude-social-text: #8B7355;
+  --claude-footer-border: rgba(194, 113, 79, 0.15);
 }
 
 body.theme-claude {
@@ -532,14 +546,17 @@ body.theme-claude .site-footer {
   flex-basis: 100%;
   text-align: center;
   padding: 32px 24px 40px 380px; /* 增加左边距以避开固定侧边栏 */
-  border-top: 1px solid var(--claude-footer-border);
   box-sizing: border-box;
+  border-top: none !important; /* 强制移除可能继承的边框 */
 }
 
 body.theme-claude .site-footer p {
   font-size: 13px;
   color: var(--claude-secondary);
   margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--claude-footer-border) !important;
+  display: block; /* 恢复为块级元素以覆盖整个右侧宽度 */
 }
 
 body.theme-claude .visitor-map {
@@ -571,40 +588,45 @@ body.theme-claude strong {
 }
 
 /* --- Responsive --- */
-@media (max-width: 1080px) {
-  body.theme-claude .wrapper {
-    width: 100%;
-    flex-direction: column;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
+  @media (max-width: 1080px) {
+    body.theme-claude .wrapper {
+      width: 100%;
+      flex-direction: column;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
 
-  body.theme-claude .sidebar {
-    width: 100%;
-    position: static;
-    height: auto;
-    padding: 48px 0 24px;
-    overflow: visible;
-  }
+    body.theme-claude .sidebar {
+      width: 100%;
+      position: static;
+      height: auto;
+      padding: 48px 0 24px;
+      overflow: visible;
+    }
 
-  body.theme-claude .content {
-    padding: 32px 0 48px;
-  }
+    body.theme-claude .content {
+      padding: 32px 0 48px;
+    }
 
-  body.theme-claude .site-footer {
-    padding: 32px 0;
-  }
+    body.theme-claude .site-footer {
+      padding: 32px 0;
+    }
 
-  body.theme-claude .image.avatar img {
-    width: 140px;
-    height: 140px;
-  }
+    body.theme-claude .site-footer p {
+      border-top: none;
+      padding-top: 0;
+    }
 
-  body.theme-claude .theme-switcher {
-    bottom: 16px;
-    right: 16px;
+    body.theme-claude .image.avatar img {
+      width: 140px;
+      height: 140px;
+    }
+
+    body.theme-claude .theme-switcher {
+      bottom: 16px;
+      right: 16px;
+    }
   }
-}
 
 @media (max-width: 480px) {
   body.theme-claude .card {

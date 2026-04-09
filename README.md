@@ -1,52 +1,58 @@
-# 简约主页说明
+# 🚀 极简学术主页模板 (Minimal Academic Homepage)
 
-这是一个简约的个人主页模板，参考了 [zhuohan123.github.io](https://github.com/zhuohan123/zhuohan123.github.io) 的设计风格。
+这是一个基于 HTML/CSS 的极简学术主页模板，专为研究人员、学生和学者设计。它具有响应式设计、深色模式支持、优雅的排版以及易于定制的特点。
 
-## 文件结构
+> [!TIP]
+> 如果你觉得这个模板对你有帮助，欢迎给一个 Star 🌟！
 
-```
-.
-├── index.html              # 主页 HTML 文件
-├── assets/
-│   ├── css/               # 样式文件
-│   │   ├── font_sans_serif.css
-│   │   ├── style-no-dark-mode.css
-│   │   └── publications-no-dark-mode.css
-│   ├── js/                # JavaScript 文件
-│   │   └── scale.fix.js
-│   └── img/               # 图片资源
-│       ├── avatar.png     # 头像图片（需要提供）
-│       └── favicon.png    # 网站图标（可选）
-└── README.md       # 本说明文件
-```
+## ✨ 特性
 
-## 使用方法
+- **极简设计**：聚焦内容，去除冗余，参考了 [Claude.ai](https://claude.ai) 的视觉风格。
+- **响应式布局**：在手机、平板和桌面端都有良好的显示效果。
+- **深色模式**：支持手动切换和系统自动随动。
+- **学术友好**：内置教育背景、研究经历、项目展示、论文列表（支持图标链接）和获奖情况等板块。
+- **易于部署**：纯静态页面，无需任何构建步骤，直接托管在 GitHub Pages。
 
-1. **替换头像**：将你的头像图片放在 `assets/img/avatar.png` 或 `assets/img/avatar.jpg`
-2. **修改个人信息**：编辑 `index.html` 文件，更新：
-   - 姓名、邮箱
-   - 社交链接
-   - 关于我、教育背景、项目、出版物等信息
-3. **部署**：直接推送到 GitHub Pages，或者通过其他静态网站托管服务部署
+## 🛠️ 快速开始：定制你的主页
 
-## 关于 Hugo
+你可以通过以下步骤快速创建属于自己的主页：
 
-如果你不再需要 Hugo，可以删除以下文件/文件夹：
-- `content/` - Hugo 内容文件
-- `config/` - Hugo 配置文件
-- `layouts/` - Hugo 布局文件
-- `hugo.yaml`, `hugo_stats.json` 等 Hugo 相关文件
-- `go.mod`, `go.sum` - Go 模块文件
-- `package.json`, `package-lock.json`, `node_modules/` - Node.js 依赖（如果不再需要）
+### 1. Fork 本仓库
+点击仓库右上角的 **Fork** 按钮，将代码克隆到你自己的 GitHub 账号下。
 
-保留的文件：
-- `index.html` - 主页
-- `assets/` - 静态资源
-- `static/` - 如果需要保留某些静态文件
+### 2. 修改个人信息
+打开 `index.html` 文件，搜索并替换以下内容：
+- **基本信息**：姓名、邮箱、头像路径。
+- **社交链接**：修改 `social-icons` 部分的链接（GitHub, Google Scholar, LinkedIn 等）。
+- **板块内容**：
+  - `About Me`：简短的自我介绍。
+  - `Education`：替换学校 Logo 和学位信息。
+  - `Experience`：添加你的实习或研究经历。
+  - `Publications`：按照格式添加你的论文。
+  - `Awards`：列出你的荣誉。
 
-## 自定义
+### 3. 替换资源文件
+- **头像**：将你的头像放入 `assets/img/` 并命名为 `avatar.png`。
+- **Logo**：将学校或机构的 Logo 放入 `assets/img/`。
+- **简历**：将你的 PDF 简历放入 `assets/cv/`。
 
-- 修改颜色：编辑 `assets/css/style-no-dark-mode.css` 中的颜色值（如 `#39c`）
-- 修改字体：编辑 `assets/css/font_sans_serif.css`
-- 添加内容：直接在 `index.html` 中添加新的 section
+### 4. 开启 GitHub Pages
+在你的仓库设置中：
+1. 进入 `Settings` -> `Pages`。
+2. 在 `Build and deployment` 下，选择 `Deploy from a branch`。
+3. 选择 `main` 分支和 `/ (root)` 目录，点击 `Save`。
+4. 几分钟后，你的主页就会在 `https://<your-username>.github.io` 上线。
 
+## 🎨 进阶定制
+
+### 修改主题颜色
+如果你想修改主题色（如链接颜色、强调色），可以编辑 `assets/css/theme-claude.css`。
+
+### 访客地图
+主页集成了 [ClustrMaps](https://clustrmaps.com/)。你可以去官网注册并获取你自己的地图 ID，然后替换 `index.html` 中 `updateMap` 函数里的相关参数。
+
+## 📄 许可证
+本项目采用 [MIT License](LICENSE.md) 开源。
+
+---
+由 [Yuheng Yang](https://github.com/wzsyyh) 维护。

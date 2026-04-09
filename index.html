@@ -10,215 +10,319 @@
   <meta name="description" content="Yuheng Yang (杨宇恒) is an undergraduate student at Westlake University (西湖大学) focusing on AI Agent and MLLM reasoning research, a member of AGI Lab advised by Prof. Chi Zhang.">
 
   <meta name="keywords" content="Yuheng Yang, 杨宇恒, Westlake University, 西湖大学, AGI Lab, Artificial Intelligence, AI Agent, MLLM, Multi-Modal Large Language Models, Reasoning, Multi-Agent Systems, Auto-Slides">
-  
+
   <link rel="canonical" href="https://wzsyyh.github.io/" />
 
   <link rel="icon" href="assets/img/favicon.png" type="image/png" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css
     integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
   <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
 
+  <!-- Base CSS (preserved) -->
   <link rel="stylesheet" href="./assets/css/font_sans_serif.css">
-  <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
-  <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+  <link rel="stylesheet" href="./assets/css/style-no-dark-mode_old.css">
+  <link rel="stylesheet" href="./assets/css/publications-no-dark-mode_old.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="./assets/css/theme-claude.css">
 
 </head>
 
-<body>
+<body class="theme-claude">
+
+  <!-- Top Navigation Bar -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="/">Home</a>
+      </div>
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" title="Toggle Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
   <div class="wrapper">
-    <header>
-      <a class="image avatar"><img src="assets/img/avatar.png" alt="avatar" onerror="this.src='assets/img/avatar.jpg'" /></a>
-      
-      <h1 style="margin: 5pt;">Yuheng Yang</h1>
-      
-      <email>yangyuheng [at] westlake.edu.cn</email>
-      
-      <br>
-      <br>
-      <div class="social-icons">
-        <a style="margin: 0 5px 0 0" href="mailto:yangyuheng@westlake.edu.cn">
-          <i class="fa-solid fa-envelope" style="font-size:1.5rem"></i>
-        </a>
-        <a style="margin: 0 5px 0 0" href="https://scholar.google.com/citations?user=BlTtSUkAAAAJ&hl=zh-CN">
-          <i class="ai ai-google-scholar" style="font-size:1.5rem"></i>
-        </a>
-        <a style="margin: 0 5px 0 0" href="https://github.com/wzsyyh">
-          <i class="fa-brands fa-github" style="font-size:1.5rem;"></i>
-        </a>
-        <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/yangyuheng/">
-          <i class="fa-brands fa-linkedin" style="font-size:1.5rem;"></i>
-        </a>
-        <a style="margin: 0 0 0 0" href="https://wzsyyh-github-io.vercel.app/">
-          <i class="fa-solid fa-rss" style="font-size:1.5rem;"></i>
-        </a>
-      </div>
-      <br>
-      <br>
-      <div style="text-align: center; margin-top: 20px;">
-        <a href="https://clustrmaps.com/site/1c8lz" title="ClustrMaps" style="display: inline-block;"><img src="https://www.clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=2TdrBvABEGrBC_bDnUoKBxbOtj0sjGIy1JJrExxZxZM&co=3399cc" alt="ClustrMaps" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" /></a>
-      </div>
+    <!-- Sidebar / Header -->
+    <header class="sidebar">
+      <div class="profile-card">
+        <a class="image avatar"><img src="assets/img/avatar.png" alt="avatar" onerror="this.src='assets/img/avatar.jpg'" /></a>
 
+        <h1 class="site-name">Yuheng Yang</h1>
+
+        <p class="site-email">yangyuheng [at] westlake.edu.cn</p>
+
+        <div class="social-icons">
+          <a href="mailto:yangyuheng@westlake.edu.cn" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=BlTtSUkAAAAJ&hl=zh-CN" title="Google Scholar">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a href="https://github.com/wzsyyh" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yangyuheng/" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://wzsyyh-github-io.vercel.app/" title="Blog">
+            <i class="fa-solid fa-rss"></i>
+          </a>
+        </div>
+
+        <div class="visitor-map sidebar-map">
+          <img id="clustrmap-sidebar" src="https://www.clustrmaps.com/map_v2.png?cl=c2714f&w=240&t=tt&d=2TdrBvABEGrBC_bDnUoKBxbOtj0sjGIy1JJrExxZxZM&co=faf9f7&ct=3d3929" alt="ClustrMaps" />
+        </div>
+
+      </div>
     </header>
-    <section>
 
-      <h3 id="about-me">About Me</h3>
+    <!-- Main Content -->
+    <section class="content">
 
-      <p>Hi, my name is Yuheng Yang (杨宇恒). I am an undergraduate student at Westlake University, currently in my second year of Artificial Intelligence studies. My research interests focus on Agents/LLMs.</p>
+      <!-- About Me -->
+      <div class="section" id="about-me">
+        <h3 class="section-title">About Me</h3>
+        <div class="section-body">
+          <p>Hi, my name is Yuheng Yang (杨宇恒). I am an undergraduate student at Westlake University, currently in my second year of Artificial Intelligence studies. My research interests focus on Agents/LLMs.</p>
 
-      <p>I am honored to be a member of the <a href="https://github.com/Westlake-AGI-Lab">Westlake AGI Lab</a>, advised by <a href="https://icoz69.github.io/">Prof. <strong>Chi Zhang</strong></a>. Currently, I am interning at UIUC with <a href="https://jiaxuan.web.illinois.edu/">Prof. <strong>Jiaxuan You</strong></a>, and previously interned at UC Merced with <a href="https://wangywust.github.io/">Prof. <strong>Yiwei Wang</strong></a>.</p>
+          <p>I am honored to be a member of the <a href="https://github.com/Westlake-AGI-Lab">Westlake AGI Lab</a>, advised by <a href="https://icoz69.github.io/">Prof. <strong>Chi Zhang</strong></a>. Currently, I am interning at UIUC with <a href="https://jiaxuan.web.illinois.edu/">Prof. <strong>Jiaxuan You</strong></a>, and previously interned at UC Merced with <a href="https://wangywust.github.io/">Prof. <strong>Yiwei Wang</strong></a>.</p>
 
-      <p><strong>📄 <a href="assets/cv/YuhengYang_CV.pdf" target="_blank">Download my CV</a></strong> (Updated: February 2026)</p>
-
-      <h3 id="education">Education</h3>
-
-      <div style="padding-right: 10px;padding-left: 20px;">
-
-        <div class="experience-item">
-          <img src="assets/img/westlake_logo.png" alt="Westlake University" class="institution-logo">
-          <div class="experience-content">
-            <p><strong>Westlake University</strong> <br />
-            Bachelor of Science in Artificial Intelligence <br />
-            2024 - 2028</p>
-          </div>
+          <p><strong><a href="assets/cv/YuhengYang_CV.pdf" target="_blank">Download my CV</a></strong> (Updated: February 2026)</p>
         </div>
-
       </div>
 
-      <h3 id="experience">Experience</h3>
-
-      <div style="padding-right: 10px;padding-left: 20px;">
-
-        <div class="experience-item">
-          <img src="assets/img/uiuc_logo.png" alt="UIUC" class="institution-logo">
-          <div class="experience-content">
-            <p><strong>University of Illinois Urbana-Champaign</strong> <br />
-            Research Intern <br />
-            <em>Hosts:</em> <a href="https://jiaxuan.web.illinois.edu/">Prof. <strong>Jiaxuan You</strong></a> <br />
-            November 2025 - Present
-            </p>
-          </div>
-        </div>
-
-        <div class="experience-item">
-          <img src="assets/img/ucmerced_logo.png" alt="UC Merced" class="institution-logo">
-          <div class="experience-content">
-            <p><strong>University of California, Merced</strong> <br />
-            Research Intern <br />
-            <em>Hosts:</em> <a href="https://wangywust.github.io/">Prof. <strong>Yiwei Wang</strong></a> <br />
-            May 2025 - October 2025
-            </p>
-          </div>
-        </div>
-
-        <div class="experience-item">
-          <img src="assets/img/westlake_logo.png" alt="Westlake University" class="institution-logo">
-          <div class="experience-content">
-            <p><strong>AGI Lab, Westlake University</strong> <br />
-            Undergraduate Research Assistant <br />
-            <em>Hosts:</em> <a href="https://icoz69.github.io/">Prof. <strong>Chi Zhang</strong></a> <br />
-            August 2024 - Present
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <h3 id="projects">Projects</h3>
-
-      <div style="padding-right: 10px;padding-left: 20px;">
-        <a href="https://auto-slides.github.io/" style="font-weight: 500">Auto-Slides</a> <a href="https://github.com/Westlake-AGI-Lab/Auto-Slides" target="_blank" style="text-decoration: none; margin-left: 8px;"><img src="https://img.shields.io/github/stars/Westlake-AGI-Lab/Auto-Slides?style=social&logo=github" alt="GitHub stars" style="vertical-align: middle;"></a>: An interactive multi-agent system for creating and customizing research presentations from academic papers, leveraging cognitive science principles and interactive optimization.
-        <div style="line-height:50%;"><br /></div>
-      </div>
-
-
-      
-      <div style="line-height:100%;"><br /></div>
-
-      <h3 id="publications" style="margin: 2px 0px -15px;">Publications</h3>
-
-      <div class="publications">
-        <ol class="bibliography">
-
-          <li>
-            <div class="pub-row">
-              <div class="col-sm-12" style="position: relative;padding-right: 10px;padding-left: 20px;">
-                  <div class="title">Probing the Knowledge Boundary: An Interactive Agentic Framework for Deep Knowledge Extraction</div>
-                  <div class="author"><strong>Yuheng Yang</strong>, Siqi Zhu, Tao Feng, Ge Liu, Jiaxuan You</div>
-                  <div class="periodical"><em><strong>arXiv preprint</strong></em>
-                  </div>
-                <div class="links">
-                  <a href="https://arxiv.org/abs/2602.00959">Paper</a> / <a href="https://github.com/ulab-uiuc/KnowledgeExtraction">Code</a> / <a href="https://ulab-uiuc.github.io/KnowledgeExtraction/">Project</a>
-                </div>
+      <!-- Education -->
+      <div class="section" id="education">
+        <h3 class="section-title">Education</h3>
+        <div class="section-body">
+          <div class="card">
+            <div class="experience-item">
+              <img src="assets/img/westlake_logo.png" alt="Westlake University" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>Westlake University</strong></p>
+                <p class="exp-detail">Bachelor of Science in Artificial Intelligence</p>
+                <p class="exp-period">2024 - 2028</p>
               </div>
             </div>
-          </li>
-
-          <div style="line-height:50%;">
-              <br />
           </div>
+        </div>
+      </div>
 
-          <li>
-            <div class="pub-row">
-              <div class="col-sm-12" style="position: relative;padding-right: 10px;padding-left: 20px;">
-                  <div class="title">Auto-Slides: An Interactive Multi-Agent System for Creating and Customizing Research Presentations</div>
-                  <div class="author"><strong>Yuheng Yang</strong>, Wenjia Jiang, Yang Wang, Yiwei Wang, Chi Zhang</div>
-                  <div class="periodical"><em><strong>ICME 2026</strong></em>
-                  </div>
-                <div class="links">
-                  <a href="https://arxiv.org/abs/2509.11062">Paper</a> / <a href="https://github.com/Westlake-AGI-Lab/Auto-Slides">Code</a> / <a href="https://auto-slides.github.io/">Project</a>
-                </div>
+      <!-- Experience -->
+      <div class="section" id="experience">
+        <h3 class="section-title">Experience</h3>
+        <div class="section-body">
+
+          <div class="card timeline-item">
+            <div class="experience-item">
+              <img src="assets/img/uiuc_logo.png" alt="UIUC" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>University of Illinois Urbana-Champaign</strong></p>
+                <p class="exp-detail">Research Intern</p>
+                <p class="exp-detail"><em>Hosts:</em> <a href="https://jiaxuan.web.illinois.edu/">Prof. <strong>Jiaxuan You</strong></a></p>
+                <p class="exp-period">November 2025 - Present</p>
               </div>
             </div>
-          </li>
-
-          <div style="line-height:50%;">
-              <br />
           </div>
 
+          <div class="card timeline-item">
+            <div class="experience-item">
+              <img src="assets/img/ucmerced_logo.png" alt="UC Merced" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>University of California, Merced</strong></p>
+                <p class="exp-detail">Research Intern</p>
+                <p class="exp-detail"><em>Hosts:</em> <a href="https://wangywust.github.io/">Prof. <strong>Yiwei Wang</strong></a></p>
+                <p class="exp-period">May 2025 - October 2025</p>
+              </div>
+            </div>
+          </div>
 
-        </ol>
+          <div class="card timeline-item">
+            <div class="experience-item">
+              <img src="assets/img/westlake_logo.png" alt="Westlake University" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>AGI Lab, Westlake University</strong></p>
+                <p class="exp-detail">Undergraduate Research Assistant</p>
+                <p class="exp-detail"><em>Hosts:</em> <a href="https://icoz69.github.io/">Prof. <strong>Chi Zhang</strong></a></p>
+                <p class="exp-period">August 2024 - Present</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
-      <h3 id="awards">Awards</h3>
-
-      <div style="padding-right: 10px;padding-left: 20px;">
-
-        <p style="margin-bottom: 8px;"><strong>🏅<a href="https://icpc.global/">ICPC</a>: EC-Final Silver Medal, Regional Gold Medal</strong></p>
-
-        <p style="margin-bottom: 8px;"><strong>🏅<a href="https://ccpc.io/">CCPC</a>: Regional Gold Medal</strong></p>
-
-        <p style="margin-bottom: 8px;"><strong>🥇<a href="https://www.noi.cn/">NOIP</a>: First Prize (Zhejiang 2023)</strong></p>
-
-        <p style="margin-bottom: 8px;"><strong>🎤Top 10 Singer in 2024 @Westlake University</strong></p>
-
-
+      <!-- Projects -->
+      <div class="section" id="projects">
+        <h3 class="section-title">Projects</h3>
+        <div class="section-body">
+          <div class="card project-card">
+            <a href="https://auto-slides.github.io/" style="font-weight: 500">Auto-Slides</a> <a href="https://github.com/Westlake-AGI-Lab/Auto-Slides" target="_blank" style="text-decoration: none; margin-left: 8px;"><img src="https://img.shields.io/github/stars/Westlake-AGI-Lab/Auto-Slides?style=social&logo=github" alt="GitHub stars" style="vertical-align: middle;"></a>: An interactive multi-agent system for creating and customizing research presentations from academic papers, leveraging cognitive science principles and interactive optimization.
+          </div>
+        </div>
       </div>
 
-      <!-- <h3 id="hobbies">Hobbies & Interests</h3>
+      <!-- Publications -->
+      <div class="section" id="publications">
+        <h3 class="section-title">Publications</h3>
+        <div class="section-body">
+          <div class="publications">
+            <ol class="bibliography">
 
-      <div style="padding-right: 10px;padding-left: 20px;">
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Probing the Knowledge Boundary: An Interactive Agentic Framework for Deep Knowledge Extraction</div>
+                    <div class="author"><strong>Yuheng Yang</strong>, Siqi Zhu, Tao Feng, Ge Liu, Jiaxuan You</div>
+                    <div class="periodical"><em><strong>arXiv preprint</strong></em></div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2602.00959">Paper</a> / <a href="https://github.com/ulab-uiuc/KnowledgeExtraction">Code</a> / <a href="https://ulab-uiuc.github.io/KnowledgeExtraction/">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-        <p><strong>⚽ Football</strong>: Real Madrid fan, particularly admire Luka Modrić. <strong>Captain</strong> of the undergraduate college team in the 2025 Westlake University Football League.</p>
-        
-        <p><strong>🎵 Music Creation</strong>: Love creating music, check out my <a href="https://music.163.com/#/artist?id=94272057">NetEase Cloud Music Artist Page</a>, fan of Hua Chenyu (华晨宇) and G.E.M. (邓紫棋)</p>
-        
-        <p><strong>🎩 Magic</strong>: Enthusiastic about magic tricks</p>
-        
-        <p><strong>♟️ Go (Weiqi)</strong>: Amateur 4-dan player</p>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Auto-Slides: An Interactive Multi-Agent System for Creating and Customizing Research Presentations</div>
+                    <div class="author"><strong>Yuheng Yang</strong>, Wenjia Jiang, Yang Wang, Yiwei Wang, Chi Zhang</div>
+                    <div class="periodical"><em><strong>ICME 2026</strong></em></div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2509.11062">Paper</a> / <a href="https://github.com/Westlake-AGI-Lab/Auto-Slides">Code</a> / <a href="https://auto-slides.github.io/">Project</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
 
-      </div> -->
+            </ol>
+          </div>
+        </div>
+      </div>
 
-      <br>
+      <!-- Awards -->
+      <div class="section" id="awards">
+        <h3 class="section-title">Awards</h3>
+        <div class="section-body">
+          <div class="awards-grid">
+            <div class="award-item">
+              <span class="award-icon">🏅</span>
+              <div class="award-text"><strong><a href="https://icpc.global/">ICPC</a>: EC-Final Silver Medal, Regional Gold Medal</strong></div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🏅</span>
+              <div class="award-text"><strong><a href="https://ccpc.io/">CCPC</a>: Regional Gold Medal</strong></div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🥇</span>
+              <div class="award-text"><strong><a href="https://www.noi.cn/">NOIP</a>: First Prize (Zhejiang 2023)</strong></div>
+            </div>
+            <div class="award-item">
+              <span class="award-icon">🎤</span>
+              <div class="award-text"><strong>Top 10 Singer in 2024 @Westlake University</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </section>
-    <footer>
 
+    <footer class="site-footer">
+      <p>&copy; 2026 Yuheng Yang. All rights reserved.</p>
     </footer>
   </div>
+
   <script src="./assets/js/scale.fix.js"></script>
-  
+  <script>
+    (function() {
+      // Theme Management
+      const themeToggle = document.getElementById('themeToggle');
+      const icon = themeToggle.querySelector('i');
+      
+      // Function to update map based on current theme
+      function updateMap(isDark) {
+        const MAP_BASE = 'https://www.clustrmaps.com/map_v2.png?w=240&t=tt&d=2TdrBvABEGrBC_bDnUoKBxbOtj0sjGIy1JJrExxZxZM';
+        const co = isDark ? '1a1917' : 'faf9f7';
+        const cl = isDark ? 'e28a67' : 'c2714f';
+        const ct = isDark ? 'd1cec7' : '3d3929';
+        
+        const img = document.getElementById('clustrmap-sidebar');
+        if (img) {
+          img.src = MAP_BASE + '&cl=' + cl + '&co=' + co + '&ct=' + ct;
+          // 确保图片被包裹在链接中
+          if (!img.parentElement || img.parentElement.tagName !== 'A') {
+            const link = document.createElement('a');
+            link.href = 'https://clustrmaps.com/site/1c8lz';
+            link.title = 'ClustrMaps';
+            img.parentNode.insertBefore(link, img);
+            link.appendChild(img);
+          }
+        }
+      }
+
+      function setTheme(isDark) {
+        if (isDark) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          icon.classList.replace('fa-moon', 'fa-sun');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+          icon.classList.replace('fa-sun', 'fa-moon');
+          localStorage.setItem('theme', 'light');
+        }
+        updateMap(isDark);
+      }
+
+      // Initial theme setup
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        setTheme(true);
+      } else {
+        setTheme(false);
+      }
+
+      themeToggle.addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        setTheme(!isDark);
+      });
+
+      // Listen for system theme changes if no saved preference
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          setTheme(e.matches);
+        }
+      });
+
+      // Intersection Observer for fade-in animations
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(function(el) {
+          observer.observe(el);
+        });
+      }
+    })();
+  </script>
+
 </body>
 
 </html>
-

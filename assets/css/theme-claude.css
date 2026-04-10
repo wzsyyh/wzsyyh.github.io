@@ -559,6 +559,18 @@ body.theme-claude .site-footer p {
   display: block; /* 恢复为块级元素以覆盖整个右侧宽度 */
 }
 
+body.theme-claude .template-credit {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--claude-secondary);
+}
+
+body.theme-claude .template-credit a {
+  color: var(--claude-accent);
+  text-decoration: none;
+}
+
 body.theme-claude .visitor-map {
   margin-bottom: 16px;
 }

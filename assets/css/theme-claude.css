@@ -596,16 +596,21 @@ body.theme-claude strong {
       box-sizing: border-box;
     }
 
+    body.theme-claude .nav-container {
+      padding: 0 20px;
+    }
+
     body.theme-claude .sidebar {
       width: 100%;
       position: static;
       height: auto;
-      padding: 48px 0 24px;
+      padding: 80px 0 24px;
       overflow: visible;
     }
 
     body.theme-claude .content {
       padding: 32px 0 48px;
+      margin-left: 0;
     }
 
     body.theme-claude .site-footer {

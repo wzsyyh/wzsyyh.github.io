@@ -348,6 +348,18 @@ body.theme-claude .section-body p {
   margin: 0 0 14px;
 }
 
+body.theme-claude .opportunity-note {
+  border-left: 3px solid var(--claude-accent);
+  background: color-mix(in srgb, var(--claude-accent) 9%, transparent);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: var(--claude-text);
+}
+
+body.theme-claude .opportunity-note strong {
+  color: var(--claude-accent);
+}
+
 body.theme-claude .section-body a {
   color: var(--claude-accent);
   text-decoration: none;

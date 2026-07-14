@@ -7,9 +7,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yuheng Yang (杨宇恒) is an undergraduate student at Westlake University (西湖大学) focusing on AI Agent and MLLM reasoning research, a member of AGI Lab advised by Prof. Chi Zhang.">
+  <meta name="description" content="Yuheng Yang (杨宇恒) is an undergraduate student at Westlake University (西湖大学) focusing on AI Agent and MLLM reasoning research, a member of AGI Lab advised by Prof. Chi Zhang, currently an LLM Researcher at Xiaomi MiMo.">
 
-  <meta name="keywords" content="Yuheng Yang, 杨宇恒, Westlake University, 西湖大学, AGI Lab, Artificial Intelligence, AI Agent, MLLM, Multi-Modal Large Language Models, Reasoning, Multi-Agent Systems, Auto-Slides">
+  <meta name="keywords" content="Yuheng Yang, 杨宇恒, Westlake University, 西湖大学, AGI Lab, Xiaomi, MiMo, Xiaomi MiMo, Artificial Intelligence, AI Agent, MLLM, Multi-Modal Large Language Models, Reasoning, Multi-Agent Systems, Auto-Slides">
 
   <link rel="canonical" href="https://wzsyyh.github.io/" />
 
@@ -79,10 +79,6 @@
           </a>
         </div>
 
-        <div class="visitor-map sidebar-map">
-          <img id="clustrmap-sidebar" src="https://www.clustrmaps.com/map_v2.png?cl=c2714f&w=240&t=tt&d=2TdrBvABEGrBC_bDnUoKBxbOtj0sjGIy1JJrExxZxZM&co=faf9f7&ct=3d3929" alt="ClustrMaps" />
-        </div>
-
       </div>
     </header>
 
@@ -95,9 +91,9 @@
         <div class="section-body">
           <p>Hi, my name is Yuheng Yang (杨宇恒). I am an undergraduate student at Westlake University, currently in my second year of Artificial Intelligence studies. My research interests focus on Agents/LLMs.</p>
 
-          <p>I am honored to be a member of the <a href="https://github.com/Westlake-AGI-Lab">Westlake AGI Lab</a>, advised by <a href="https://icoz69.github.io/">Prof. <strong>Chi Zhang</strong></a>. Currently, I am interning at UIUC with <a href="https://jiaxuan.web.illinois.edu/">Prof. <strong>Jiaxuan You</strong></a>, and previously interned at UC Merced with <a href="https://wangywust.github.io/">Prof. <strong>Yiwei Wang</strong></a>.</p>
+          <p>I am honored to be a member of the <a href="https://github.com/Westlake-AGI-Lab">Westlake AGI Lab</a>, advised by <a href="https://icoz69.github.io/">Prof. <strong>Chi Zhang</strong></a>. Currently, I am an LLM Researcher at <a href="https://mimo.xiaomi.com/">Xiaomi MiMo</a>. Previously, I interned at UIUC with <a href="https://jiaxuan.web.illinois.edu/">Prof. <strong>Jiaxuan You</strong></a> and at UC Merced with <a href="https://wangywust.github.io/">Prof. <strong>Yiwei Wang</strong></a>.</p>
 
-          <p class="opportunity-note"><strong>Open to opportunities:</strong> I am always interested in potential collaborations and open to research internship opportunities in both academia and industry. Please feel free to reach out via email.</p>
+          <p class="opportunity-note"><strong>Open to collaborations:</strong> I am always interested in potential research collaborations. Please feel free to reach out via email.</p>
 
           <p><strong><a href="assets/cv/YuhengYang_CV.pdf" target="_blank">Download my CV</a></strong> (Updated: May 2026)</p>
         </div>
@@ -127,12 +123,23 @@
 
           <div class="card timeline-item">
             <div class="experience-item">
+              <img src="assets/img/xiaomi_logo.png" alt="Xiaomi" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>Xiaomi MiMo</strong></p>
+                <p class="exp-detail">LLM Researcher</p>
+                <p class="exp-period">July 2026 - Present</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="experience-item">
               <img src="assets/img/uiuc_logo.png" alt="UIUC" class="institution-logo">
               <div class="experience-content">
                 <p class="exp-title"><strong>University of Illinois Urbana-Champaign</strong></p>
                 <p class="exp-detail">Research Intern</p>
                 <p class="exp-detail"><em>Hosts:</em> <a href="https://jiaxuan.web.illinois.edu/">Prof. <strong>Jiaxuan You</strong></a></p>
-                <p class="exp-period">November 2025 - Present</p>
+                <p class="exp-period">November 2025 - July 2026</p>
               </div>
             </div>
           </div>
@@ -254,27 +261,6 @@
       // Theme Management
       const themeToggle = document.getElementById('themeToggle');
       const icon = themeToggle.querySelector('i');
-      
-      // Function to update map based on current theme
-      function updateMap(isDark) {
-        const MAP_BASE = 'https://www.clustrmaps.com/map_v2.png?w=240&t=tt&d=2TdrBvABEGrBC_bDnUoKBxbOtj0sjGIy1JJrExxZxZM';
-        const co = isDark ? '1a1917' : 'faf9f7';
-        const cl = isDark ? 'e28a67' : 'c2714f';
-        const ct = isDark ? 'd1cec7' : '3d3929';
-        
-        const img = document.getElementById('clustrmap-sidebar');
-        if (img) {
-          img.src = MAP_BASE + '&cl=' + cl + '&co=' + co + '&ct=' + ct;
-          // 确保图片被包裹在链接中
-          if (!img.parentElement || img.parentElement.tagName !== 'A') {
-            const link = document.createElement('a');
-            link.href = 'https://clustrmaps.com/site/1c8lz';
-            link.title = 'ClustrMaps';
-            img.parentNode.insertBefore(link, img);
-            link.appendChild(img);
-          }
-        }
-      }
 
       function setTheme(isDark) {
         if (isDark) {
@@ -286,7 +272,6 @@
           icon.classList.replace('fa-sun', 'fa-moon');
           localStorage.setItem('theme', 'light');
         }
-        updateMap(isDark);
       }
 
       // Initial theme setup

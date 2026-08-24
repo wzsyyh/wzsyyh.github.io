@@ -1,0 +1,156 @@
+%-------------------------
+% CV - Yuheng Yang
+% Last updated: August 2026
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage{academicons}
+
+% Colors
+\definecolor{linkblue}{HTML}{2B6CB0}
+\definecolor{sectionblue}{HTML}{2B6CB0}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\color{sectionblue}\large\bfseries\scshape
+}{}{0em}{}[\color{sectionblue}\titlerule\vspace{-4pt}]
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeItem}[1]{\item #1\vspace{-2pt}}
+
+\newcommand{\pubEntry}[4]{
+  \vspace{4pt}
+  \textbf{#1}\\
+  #2\\
+  \textit{#3}\\
+  #4\vspace{2pt}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\LARGE\bfseries Yuheng Yang}\\\vspace{4pt}
+  Undergraduate Researcher in AI Agents \& LLM Reasoning\\\vspace{6pt}
+  \faEnvelope\ \href{mailto:yangyuheng@westlake.edu.cn}{yangyuheng@westlake.edu.cn} \quad
+  \faGlobe\ \href{https://wzsyyh.github.io}{wzsyyh.github.io} \quad
+  \faGithub\ \href{https://github.com/wzsyyh}{wzsyyh}\\
+  \aiGoogleScholar\ \href{https://scholar.google.com/citations?user=BlTtSUkAAAAJ}{Google Scholar} \quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/yangyuheng/}{LinkedIn} \quad
+  \faMapMarker*\ Hangzhou, China
+\end{center}
+
+%----------EDUCATION----------
+\section{Education}
+\resumeSubheading
+  {Westlake University}{Hangzhou, China}
+  {Bachelor of Science in Artificial Intelligence}{2024 -- 2028 (Expected)}
+
+%----------RESEARCH INTERESTS----------
+\section{Research Interests}
+Post-Training, RL, Agent.
+
+%----------RESEARCH EXPERIENCE----------
+\section{Research Experience}
+
+\resumeSubheading
+  {Xiaomi LLM-Core Team}{Beijing, China}
+  {Research Engineer}{Jul 2026 -- Present}
+\begin{itemize}[leftmargin=1.5em, topsep=2pt, itemsep=0pt]
+  \resumeItem{Research on LLM post-training and coding capabilities}
+\end{itemize}
+
+\resumeSubheading
+  {University of Illinois Urbana-Champaign}{Remote}
+  {Research Intern, advised by \href{https://jiaxuan.web.illinois.edu/}{Prof. Jiaxuan You}}{Nov 2025 -- Jul 2026}
+\begin{itemize}[leftmargin=1.5em, topsep=2pt, itemsep=0pt]
+  \resumeItem{Research on knowledge extraction from large language models}
+\end{itemize}
+
+\resumeSubheading
+  {University of California, Merced}{Remote}
+  {Research Intern, advised by \href{https://wangywust.github.io/}{Prof. Yiwei Wang}}{May 2025 -- Oct 2025}
+\begin{itemize}[leftmargin=1.5em, topsep=2pt, itemsep=0pt]
+  \resumeItem{Conducted research on AI agents and MLLM reasoning}
+\end{itemize}
+
+\resumeSubheading
+  {AGI Lab, Westlake University}{Hangzhou, China}
+  {Undergraduate Research Assistant, advised by \href{https://icoz69.github.io/}{Prof. Chi Zhang}}{Aug 2024 -- Present}
+\begin{itemize}[leftmargin=1.5em, topsep=2pt, itemsep=0pt]
+  \resumeItem{Led the development of Auto-Slides, a multi-agent system for academic presentation generation}
+\end{itemize}
+
+%----------PUBLICATIONS----------
+\section{Publications}
+
+\pubEntry
+  {Probing the Knowledge Boundary: An Interactive Agentic Framework for Deep Knowledge Extraction}
+  {\textbf{Yuheng Yang}, Siqi Zhu, Tao Feng, Ge Liu, Jiaxuan You}
+  {ICML 2026}
+  {\href{https://arxiv.org/abs/2602.00959}{Paper} | \href{https://github.com/ulab-uiuc/KnowledgeExtraction}{Code} | \href{https://ulab-uiuc.github.io/KnowledgeExtraction/}{Project}}
+
+\pubEntry
+  {Auto-Slides: An Interactive Multi-Agent System for Creating and Customizing Research Presentations}
+  {\textbf{Yuheng Yang}, Wenjia Jiang, Yang Wang, Yiwei Wang, Chi Zhang}
+  {ICME 2026}
+  {\href{https://arxiv.org/abs/2509.11062}{Paper} | \href{https://github.com/Westlake-AGI-Lab/Auto-Slides}{Code} | \href{https://auto-slides.github.io/}{Project}}
+
+%----------PROJECTS----------
+\section{Projects}
+
+\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://auto-slides.github.io/}{Auto-Slides}} & \faGithub\ \href{https://github.com/Westlake-AGI-Lab/Auto-Slides}{GitHub}
+\end{tabular*}\vspace{2pt}
+An interactive multi-agent system that transforms research papers into pedagogically structured academic presentations, leveraging cognitive science principles and interactive optimization techniques.
+
+%----------AWARDS----------
+\section{Awards \& Honors}
+
+\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \textbf{ICPC} (International Collegiate Programming Contest) & 2025 \\
+  \quad EC-Final Silver Medal, Regional Gold Medal & \\[4pt]
+  \textbf{CCPC} (China Collegiate Programming Contest) & 2025 \\
+  \quad Regional Gold Medal & \\[4pt]
+  \textbf{NOIP} (National Olympiad in Informatics in Provinces) & 2023 \\
+  \quad First Prize, Zhejiang Province & \\
+\end{tabular*}
+
+%----------TECHNICAL SKILLS----------
+\section{Technical Skills}
+
+\textbf{Programming:} Python, C++\\
+\textbf{Frameworks:} PyTorch, LangChain, Transformers\\
+\textbf{Tools:} Git, Linux, \LaTeX
+
+%-------------------------------------------
+\end{document}

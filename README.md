@@ -1,3 +1,5 @@
+
+
 # 🚀 极简学术主页模板 (Minimal Academic Homepage)
 
 这是一个基于 HTML/CSS 的极简学术主页模板，专为研究人员、学生和学者设计。它具有响应式设计、深色模式支持、优雅的排版以及易于定制的特点。
@@ -28,6 +30,7 @@
   - `About Me`：简短的自我介绍。
   - `Education`：替换学校 Logo 和学位信息。
   - `Experience`：添加你的实习或研究经历。
+  - `Projects`：添加你的项目展示。
   - `Publications`：按照格式添加你的论文。
   - `Awards`：列出你的荣誉。
 

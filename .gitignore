@@ -87,4 +87,14 @@ resume*
 *.log
 *.out
 
+# ============================================================================
+# CV sources & variants — only assets/cv/YuhengYang_CV.pdf is published
+# ============================================================================
+
+assets/cv/*.tex
+assets/cv/YuhengYang_CV_*.pdf
+
+# Claude Code local state
+.claude/
+
 luka-homepage-template/
